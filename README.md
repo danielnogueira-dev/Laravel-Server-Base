@@ -132,8 +132,11 @@ A versão deve ser informada no comando de execução. Ex: composer require lara
 10. Informações sobre o Passport
 	
 	Comando para rodar o passport:
+	
 		composer require laravel/passport=~4.0
+		
 		php artisan migrate
+		
 		php artisan passport:install
 	
 	Para utilizar as views do oauth, é preciso executar o comando: php artisan make:auth
