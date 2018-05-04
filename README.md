@@ -146,4 +146,5 @@ A versão deve ser informada no comando de execução. Ex: composer require lara
 11. Criando usuário admin via Seed
 
 	composer dump-autoload
+	
 	php artisan db:seed
