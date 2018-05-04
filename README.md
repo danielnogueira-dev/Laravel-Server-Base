@@ -127,7 +127,14 @@ A versão deve ser informada no comando de execução. Ex: composer require lara
 	
 	show tables;
 	
+	obs: Alterar arquivo de variável de ambiente do laravel com as informações do banco de dados criado.
+	
 10. Informações sobre o Passport
+	
+	Comando para rodar o passport:
+		composer require laravel/passport=~4.0
+		php artisan migrate
+		php artisan passport:install
 	
 	Para utilizar as views do oauth, é preciso executar o comando: php artisan make:auth
     Cadastra-se e faça o login no sistema, isso irá evitar o erro 401.
@@ -135,3 +142,8 @@ A versão deve ser informada no comando de execução. Ex: composer require lara
 	Sempre que for feita alguma alteração no Vue, executar comando para recompilar assets para as telas de client do passaporte: npm run dev
 	
 	Comando para conseguir autorização do oauth para o client via password, de forma específica: php artisan passport:client --password
+	
+11. Criando usuário admin via Seed
+
+	composer dump-autoload
+	php artisan db:seed
